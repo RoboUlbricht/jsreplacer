@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $.fn.wrapInTag = function (opts) {
+
+            var words = opts.words || [],
+                regex = RegExp(words.join('|'), 'gi'),
+                replacement = '<a href="' + opts.url + '">$&</a>';
+
+            return this.html(function () {
+                return $(this).html().replace(regex, replacement);
+            });
+        };
+
+        $(document).ready(function () {
+            $('p').wrapInTag({
+                url: 'https://www.arduinoslovakia.eu',
+                words: ['Arduino', 'Arduina']
+            });
+            $('p').wrapInTag({
+                url: 'https://www.arduinoslovakia.eu/page/ds18b20-senzor-teploty',
+                words: ['DS18B20', 'senzor teploty']
+            });
+        });
+
+
+    </script>
+</head>
+
+<body>
+    <p>Arduino je open-source platforma založená na mikrokontroléroch firmy Atmel a grafickom vývojovom prostredí. Doska
+        Arduina je navrhnutá tak, aby ju bolo možné hneď používať na experimenty. Stačí ju pripojiť do USB, nainštalovať
+        vývojové prostredie a môžete sa pustiť do jej programovania.</p>
+    <p>DS18B20 je digitálny senzor teploty s rozlíšením 9-12 bitov. Komunikuje pomocou rozhrania One Wire.</p>
+</body>
+
+</html>
