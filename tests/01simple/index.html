@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $.fn.wrapInTag = function (opts) {
+
+            var tag = opts.tag || 'strong',
+                words = opts.words || [],
+                regex = RegExp(words.join('|'), 'gi'),
+                replacement = '<' + tag + '>$&</' + tag + '>';
+
+            return this.html(function () {
+                return $(this).html().replace(regex, replacement);
+            });
+        };
+
+        $(document).ready(function () {
+            $('p').wrapInTag({
+                tag: 'b',
+                words: ['world', 'red']
+            });
+        });
+
+
+    </script>
+</head>
+
+<body>
+
+        <p>This <i>line</i> is not affected.</p>
+        <p>The world is big and red.</p>
+
+</body>
+
+</html>
