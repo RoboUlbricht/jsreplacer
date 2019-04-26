@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $.fn.wrapInTag = function (opts) {
+
+            var tag = opts.tag || 'strong',
+                words = opts.words || [],
+                regex = RegExp(words.join('|'), 'gi');
+            var links = [];
+            for (let i = 0; i < opts.url.length; i++) {
+                links.push('<a href="' + opts.url[i].url + '">' + opts.url[i].name + '</a>');
+            }
+            links = links.join(', ');
+
+            var replacement = '<' + tag + '>$&</' + tag + '> (' + links + ')';
+
+            return this.html(function () {
+                return $(this).html().replace(regex, replacement);
+            });
+        };
+
+        $(document).ready(function () {
+            $('p').wrapInTag({
+                tag: 'b',
+                url: [
+                    { url: 'https://www.arduinoslovakia.eu', name: 'sk' },
+                    { url: 'https://www.arduinoslovakia.eu/?lang=cs', name: 'cz' },
+                    { url: 'https://www.arduinoslovakia.eu/?lang=en', name: 'en' }
+                ],
+                words: ['Arduino', 'Arduina']
+            });
+            $('p').wrapInTag({
+                tag: 'i',
+                url: [
+                    { url: 'https://www.arduinoslovakia.eu/page/ds18b20-senzor-teploty', name: 'DS18B20 senzor teploty' },
+                    { url: 'https://www.arduinoslovakia.eu/page/esp8266', name: 'ESP8266' },
+                    { url: 'https://www.arduinoslovakia.eu/page/attiny85', name: 'ATtiny85' },
+                    { url: 'https://twitter.com/arduinoslovakia', name: 'A na Twitter link' },
+                    { url: 'https://www.w3schools.com/jquery/default.asp', name: 'A teraz o niečom úplne inom' }
+                ],
+                words: ['DS18B20', 'senzor teploty']
+            });
+        });
+
+
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Bootstrap CSS</h1>
+        <p>Arduino je open-source platforma založená na mikrokontroléroch firmy Atmel a grafickom vývojovom prostredí.
+            Doska
+            Arduina je navrhnutá tak, aby ju bolo možné hneď používať na experimenty. Stačí ju pripojiť do USB,
+            nainštalovať
+            vývojové prostredie a môžete sa pustiť do jej programovania.</p>
+        <p>DS18B20 je digitálny senzor teploty s rozlíšením 9-12 bitov. Komunikuje pomocou rozhrania One Wire.</p>
+    </div>
+</body>
+
+</html>
