@@ -9,7 +9,7 @@ $.fn.wrapInTag = function (opts) {
     }
     links = links.join(', ');
 
-    let replacement = `<${tag}>$&</${tag}> (${links}`;
+    let replacement = `<${tag}>$&</${tag}> (${links})`;
 
     return this.html(function () {
         return $(this).html().replace(regex, replacement);

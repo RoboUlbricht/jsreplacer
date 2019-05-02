@@ -1,0 +1,72 @@
+{
+    "modify": [
+        {
+            "selector": "#ano",
+            "origin": false,
+            "tag": "",
+            "wrap": ["(", ")"],
+            "url": [
+                {
+                    "url": "https://www.arduinoslovakia.eu",
+                    "name": "Banggood"
+                },
+                {
+                    "url": "https://www.arduinoslovakia.eu/?lang=cs",
+                    "name": "Ebay"
+                },
+                {
+                    "url": "https://www.arduinoslovakia.eu/?lang=en",
+                    "name": "Aliexpress"
+                }
+            ],
+            "words": [
+                "{linkDS18B20}"
+            ]
+        },
+        {
+            "selector": "#ano",
+            "origin": false,
+            "tag": "",
+            "wrap": ["[", "]"],
+            "url": [
+                {
+                    "url": "https://www.arduinoslovakia.eu",
+                    "name": "Banggood"
+                },
+                {
+                    "url": "https://www.arduinoslovakia.eu/?lang=cs",
+                    "name": "Ebay"
+                },
+                {
+                    "url": "https://www.arduinoslovakia.eu/?lang=en",
+                    "name": "Aliexpress"
+                }
+            ],
+            "words": [
+                "{linkATtiny85}"
+            ]
+        },
+        {
+            "selector": "#ano",
+            "origin": false,
+            "tag": "",
+            "url": [
+                {
+                    "url": "https://www.arduinoslovakia.eu",
+                    "name": "Banggood"
+                },
+                {
+                    "url": "https://www.arduinoslovakia.eu/?lang=cs",
+                    "name": "Ebay"
+                },
+                {
+                    "url": "https://www.arduinoslovakia.eu/?lang=en",
+                    "name": "Aliexpress"
+                }
+            ],
+            "words": [
+                "{linkBreadboard}"
+            ]
+        }
+    ]
+}
