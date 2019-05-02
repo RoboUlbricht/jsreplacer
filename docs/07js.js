@@ -17,7 +17,7 @@ $.fn.wrapInTag = function (opts) {
 };
 
 $(document).ready(function () {
-    $.getJSON('06.json', (data) => {
+    $.getJSON('07.json', (data) => {
         for (let i = 0; i < data.modify.length; i++) {
             $(data.modify[i].selector).wrapInTag(data.modify[i]);
         }
