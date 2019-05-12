@@ -4,7 +4,7 @@
             "selector": "#ano",
             "origin": false,
             "tag": "",
-            "image": "/tn/ds18b20.jpg",
+            "image": "tn/ds18b20.jpg",
             "wrap": ["(", ")"],
             "url": [
                 {
@@ -28,7 +28,7 @@
             "selector": "#ano",
             "origin": false,
             "tag": "",
-            "image": "/tn/attiny85.jpg",
+            "image": "tn/attiny85.jpg",
             "wrap": ["[", "]"],
             "url": [
                 {
@@ -52,7 +52,7 @@
             "selector": "#ano",
             "origin": false,
             "tag": "",
-            "image": "/tn/breadboard.jpg",
+            "image": "tn/breadboard.jpg",
             "url": [
                 {
                     "url": "https://www.arduinoslovakia.eu",
