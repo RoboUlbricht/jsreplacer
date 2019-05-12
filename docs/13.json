@@ -1,0 +1,75 @@
+{
+    "modify": [
+        {
+            "selector": "#ano",
+            "origin": false,
+            "tag": "",
+            "image": "/tn/ds18b20.jpg",
+            "wrap": ["(", ")"],
+            "url": [
+                {
+                    "url": "https://www.arduinoslovakia.eu",
+                    "name": "Banggood"
+                },
+                {
+                    "url": "https://www.arduinoslovakia.eu/?lang=cs",
+                    "name": "Ebay"
+                },
+                {
+                    "url": "https://www.arduinoslovakia.eu/?lang=en",
+                    "name": "Aliexpress"
+                }
+            ],
+            "words": [
+                "{linkDS18B20}"
+            ]
+        },
+        {
+            "selector": "#ano",
+            "origin": false,
+            "tag": "",
+            "image": "/tn/attiny85.jpg",
+            "wrap": ["[", "]"],
+            "url": [
+                {
+                    "url": "https://www.arduinoslovakia.eu",
+                    "name": "Banggood"
+                },
+                {
+                    "url": "https://www.arduinoslovakia.eu/?lang=cs",
+                    "name": "Ebay"
+                },
+                {
+                    "url": "https://www.arduinoslovakia.eu/?lang=en",
+                    "name": "Aliexpress"
+                }
+            ],
+            "words": [
+                "{linkATtiny85}"
+            ]
+        },
+        {
+            "selector": "#ano",
+            "origin": false,
+            "tag": "",
+            "image": "/tn/breadboard.jpg",
+            "url": [
+                {
+                    "url": "https://www.arduinoslovakia.eu",
+                    "name": "Banggood"
+                },
+                {
+                    "url": "https://www.arduinoslovakia.eu/?lang=cs",
+                    "name": "Ebay"
+                },
+                {
+                    "url": "https://www.arduinoslovakia.eu/?lang=en",
+                    "name": "Aliexpress"
+                }
+            ],
+            "words": [
+                "{linkBreadboard}"
+            ]
+        }
+    ]
+}
