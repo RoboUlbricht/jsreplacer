@@ -1,0 +1,102 @@
+{
+    "modify": [
+        {
+            "selector": "#ano",
+            "origin": false,
+            "tag": "",
+            "group": [
+                {
+                    "image": "tn/ds18b20.jpg",
+                    "name": "DS18B20",
+                    "description": "Nie vodotesné. Toto je grupa jedna, ktorá napríklad smeruje na túto skupinu hyperlinkov. Môže byť aj jeden, ale je to univerzálne urobené na viac možností.",
+                    "url": [
+                        {
+                            "url": "https://www.arduinoslovakia.eu",
+                            "name": "Banggood"
+                        },
+                        {
+                            "url": "https://www.arduinoslovakia.eu/?lang=cs",
+                            "name": "Ebay"
+                        },
+                        {
+                            "url": "https://www.arduinoslovakia.eu/?lang=en",
+                            "name": "Aliexpress"
+                        }
+                    ]
+                },
+                {
+                    "image": "tn/attiny85.jpg",
+                    "name": "DS18B20 VODOTESNÉ",
+                    "description": "Vodotesné. A toto je druhá skupina. Čiže ak chcem k jednému kľúčovému slovu dodať rôzne cieľové stránky, tak toto je tá cesta.",
+                    "url": [
+                        {
+                            "url": "https://www.arduinoslovakia.eu",
+                            "name": "Banggood"
+                        },
+                        {
+                            "url": "https://www.arduinoslovakia.eu/?lang=cs",
+                            "name": "Ebay"
+                        },
+                        {
+                            "url": "https://www.arduinoslovakia.eu/?lang=en",
+                            "name": "Aliexpress"
+                        }
+                    ]
+                }
+            ],
+            "words": [
+                "{linkDS18B20}"
+            ]
+        },
+        {
+            "selector": "#ano",
+            "origin": false,
+            "tag": "",
+            "image": "tn/attiny85.jpg",
+            "wrap": [
+                "[",
+                "]"
+            ],
+            "url": [
+                {
+                    "url": "https://www.arduinoslovakia.eu",
+                    "name": "Banggood"
+                },
+                {
+                    "url": "https://www.arduinoslovakia.eu/?lang=cs",
+                    "name": "Ebay"
+                },
+                {
+                    "url": "https://www.arduinoslovakia.eu/?lang=en",
+                    "name": "Aliexpress"
+                }
+            ],
+            "words": [
+                "{linkATtiny85}"
+            ]
+        },
+        {
+            "selector": "#ano",
+            "origin": false,
+            "tag": "",
+            "image": "tn/breadboard.jpg",
+            "url": [
+                {
+                    "url": "https://www.arduinoslovakia.eu",
+                    "name": "Banggood"
+                },
+                {
+                    "url": "https://www.arduinoslovakia.eu/?lang=cs",
+                    "name": "Ebay"
+                },
+                {
+                    "url": "https://www.arduinoslovakia.eu/?lang=en",
+                    "name": "Aliexpress"
+                }
+            ],
+            "words": [
+                "{linkBreadboard}"
+            ]
+        }
+    ]
+}
